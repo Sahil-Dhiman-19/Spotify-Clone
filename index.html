@@ -1,0 +1,295 @@
+<!-- 2024, Nov 29 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+
+    <!-- ————————————————————CSS Files————————————————————————— -->
+
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="flex">
+        <section class="leftContainer ">
+            <section class="leftUpperContainer containerWidth bgGrey roundCorner boxSpace">
+                <div>
+                    <img class="invert" src="res/img/logo.svg" alt="Spotify Logo">
+                </div>
+
+                <ul>
+                    <li class="flex"><img class="invert icon" src="res/img/home.svg" alt="Home-icon">Home</li>
+
+                    <li class="flex"><img class="invert icon" src="res/img/search.svg" alt="Search-icon">Search</li>
+                </ul>
+            </section>
+
+            <!-- ————————————————————————————————————————————— -->
+
+            <section class="leftLowerContainer containerWidth bgGrey roundCorner boxSpace">
+                <div class="list flex">
+                    <img class="invert icon1" src="res/img/playlist.svg" alt="Playlist Icon">
+                    <h2>Your Library</h2>
+                </div>
+
+                <div id="songList">
+                    <ul></ul>
+                </div>
+
+                <div class="footer flex">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">Legal </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Privacy Center</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <!-- ————————————————————————————————————————————— -->
+
+        <section class="rightContainer bgGrey roundCorner">
+            <header>
+                <nav class="flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#ffffff" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#ffffff" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <!-- ————————————————————————————————————————————— -->
+
+                    <div>
+                        <button class="btn signup-btn pop">Sign Up</button>
+                        <button class="btn login-btn pop">Login</button>
+                    </div>
+
+                </nav>
+            </header>
+
+            <!-- ————————————————————————————————————————————— -->
+
+            <div class="spotify-album">
+                <h1>Spotify Playlist</h1>
+
+                <div class="card-container flex">
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Aashiqui 2</p>
+                            <p class="song-artist">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">love hotel</p>
+                            <p class="song-artist">leftovermax</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">GLORY</p>
+                            <p class="song-artist">Yo Yo Honey Singh </p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Aaj Ki Raat (From "Stree 2")</p>
+                            <p class="song-artist">Sachin-Jigar, Amitabh Bhattacharya</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Making Memories</p>
+                            <p class="song-artist">Karan Aujla, Ikky</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Yeh Jawaani Hai Deewani</p>
+                            <p class="song-artist">Pritam</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Aashiqui 2</p>
+                            <p class="song-artist">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">love hotel</p>
+                            <p class="song-artist">leftovermax</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">GLORY</p>
+                            <p class="song-artist">Yo Yo Honey Singh </p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Aaj Ki Raat (From "Stree 2")</p>
+                            <p class="song-artist">Sachin-Jigar, Amitabh Bhattacharya</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Making Memories</p>
+                            <p class="song-artist">Karan Aujla, Ikky</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Yeh Jawaani Hai Deewani</p>
+                            <p class="song-artist">Pritam</p>
+                        </div>
+                    </div>
+
+                    <div class="card roundCorner">
+                        <img class="image roundCorner"
+                            src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                        <img class="play-btn" src="res/img/play button.png" alt="" width="80px">
+
+                        <div class="card-txt">
+                            <p class="song-name">Yeh Jawaani Hai Deewani</p>
+                            <p class="song-artist">Pritam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ————————————————————————————————————————————— -->
+
+            <div class="player">
+                <div class="song-info flex">
+                    <div class="details">
+                        <h3 id="song-title">Song Title</h3>
+                    </div>
+                </div>
+
+                <div class="controls flex">
+                    <button id="prev" class="control-btn pop">
+                        <img src="res/img/prevsong.svg" alt="">
+                    </button>
+
+                    <button id="play" class="control-btn pop">
+                        <img src="res/img/play.svg" alt="">
+                    </button>
+
+                    <button id="next" class="control-btn pop">
+                        <img src="res/img/nextsong.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="progress-container">
+                    <input type="range" id="progress-bar" value="0" min="0" max="10000"
+                        style="accent-color: #ffa938; height: 4px;">
+
+                    <div class="time flex">
+                        <span id="current-time">0:00</span>
+
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ————————————————————JavaScript File————————————————————————— -->
+    <script src="script.js"></script>
+</body>
+
+</html>
